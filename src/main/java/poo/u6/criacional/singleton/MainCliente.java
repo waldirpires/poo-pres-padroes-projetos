@@ -16,6 +16,7 @@ public class MainCliente {
 //        System.out.println(d2);
 //        System.out.println();
 
+//        var d3 = new BancoDeDados();
         var lista = Arrays.asList("1", "2", "3", "4");
 
         // Java 8 Streams APIs
