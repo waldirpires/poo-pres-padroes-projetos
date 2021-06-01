@@ -4,6 +4,8 @@ package poo.u6.criacional.builder;
 // (2) declarar uma interface com os passos
 public interface CasaBuilder {
 
+    void init();
+    
     void comJanelas(Integer janelas);
 
     void comPortas(Integer portas);

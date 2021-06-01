@@ -1,6 +1,6 @@
 package poo.u6.criacional.factorymethod;
 
-public class LogisiticaAerea extends Logistica {
+public class LogisticaAerea extends Logistica {
 
     @Override
     Transporte criarTransporte() {

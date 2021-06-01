@@ -3,14 +3,14 @@ package poo.u6.criacional.prototype;
 public class MainCliente {
 
     public static void main(String[] args) {
-        var prototipo = new Circulo(3, 4, "verde", 10);
-        System.out.println(prototipo);
+        var c1 = new Circulo(3, 4, "verde", 10);
+        System.out.println(c1);
         System.out.println();
 
         // forma tradicional de clonar/copiar um objeto
-        var copia2 = new Circulo(prototipo.x, prototipo.y, prototipo.cor, prototipo.raio);
+        var copia2 = new Circulo(c1.x, c1.y, c1.cor, c1.raio);
 
-        var copia = prototipo.clonar();
+        var copia = c1.clonar();
         System.out.println(copia);
         System.out.println();
 
@@ -21,6 +21,5 @@ public class MainCliente {
         copia = protRet.clonar();
         System.out.println(copia);
         System.out.println();
-
     }
 }

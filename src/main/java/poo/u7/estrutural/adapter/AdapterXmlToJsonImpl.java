@@ -5,16 +5,21 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
+// (2) classe que implementa a interface adapter
 public class AdapterXmlToJsonImpl implements AdapterXmlToJson {
 
+    // (3) atributo - classe de serviço
     private Servico servico;
 
     public AdapterXmlToJsonImpl(Servico servico) {
         this.servico = servico;
     }
 
+    // (4) implementar os metodos da interface adapter
     @Override
     public String adaptarDados(String xml) throws JsonMappingException, JsonProcessingException {
+    
+        // ------------------------------ detalhes de implementação do adapter
         // dados originais em XML
         System.out.println("Dados originais:\n");
         System.out.println(xml);
@@ -32,6 +37,8 @@ public class AdapterXmlToJsonImpl implements AdapterXmlToJson {
         String json = mapper.writeValueAsString(stock);
 
         System.out.println("JSON: " + json);
+
+        // ------------------------------ detalhes de implementação do adapter
 
         servico.analisarDadosEmJson(json);
 

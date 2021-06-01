@@ -1,5 +1,5 @@
 package poo.u7.estrutural.bridge.figura.abstracao;
 
-public class Retangulo {
+public class Retangulo extends Figura{
 
 }

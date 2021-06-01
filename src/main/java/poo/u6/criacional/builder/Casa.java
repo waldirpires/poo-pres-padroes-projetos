@@ -12,6 +12,7 @@ public class Casa {
     private Boolean possuiPortao;
     private Boolean possuiHidromassagem;
 
+    // construtor telescópio (code smell, acima de 6)
     public Casa(Integer janelas, Integer portas, Integer quartos, Boolean possuiGaragem, Boolean possuipiscina,
             Boolean possuiJardim, Boolean possuiPortao) {
         super();

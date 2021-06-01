@@ -1,14 +1,16 @@
 package poo.u6.criacional.builder;
 
+// (3) criar uma classe builder a partir da interface
 public class CasaBuilderImpl implements CasaBuilder, KitLuxo {
 
     // classe/objeto complexo
     private Casa casa;
 
-    public CasaBuilderImpl() {
+    @Override
+    public void init() {
         this.casa = new Casa();
     }
-
+    
     @Override
     public void comJanelas(Integer janelas) {
         casa.setJanelas(janelas);
