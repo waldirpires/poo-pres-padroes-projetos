@@ -14,7 +14,10 @@ public class DecoradorFacebook extends DecoradorBase {
 	
 	@Override
 	public void enviarMensagem(String msg) {
+		// executa as notificações empilhadas
 		super.enviarMensagem(msg);
+		
+		// executa a notificação corrente - facebook
 		this.notificadorFb.enviarMensagem(msg);
 	}
 

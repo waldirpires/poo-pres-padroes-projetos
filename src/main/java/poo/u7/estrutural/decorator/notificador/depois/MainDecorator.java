@@ -1,6 +1,7 @@
 package poo.u7.estrutural.decorator.notificador.depois;
 
 import poo.u7.estrutural.decorator.notificador.antes.NotificadorEmail;
+import poo.u7.estrutural.decorator.notificador.antes.NotificadorFumaca;
 
 public class MainDecorator {
 
@@ -14,7 +15,11 @@ public class MainDecorator {
 		System.out.println("\n=====\n");
 		
 		// decorador slack, sms e email
-		var decoradorSlack = new DecoradorSlack(notificadorEmail);
+		var decoradorSlack = new DecoradorSlack(decoradorEmailSms);
 		decoradorSlack.enviarMensagem("Casa pegando fogo!");
+		
+		var fumaca = new NotificadorFumaca();
+		var decoradorEmail = new DecoratorEmail(fumaca);
+		decoradorEmail.enviarMensagem("teste 123");
 	}
 }

@@ -6,7 +6,6 @@ public class Ponto implements Grafico{
 	private int y;
 	
 	public Ponto(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
 	}
