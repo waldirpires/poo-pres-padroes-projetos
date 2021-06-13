@@ -15,10 +15,6 @@ public class Floresta {
 	public Floresta(String nome) {
 		super();
 		this.nome = nome;
-		
-		// zerar os contadores - quantidade de objetos criados
-		Arvore.init();
-		TipoArvore.init();
 	}
 
 	// sem o padrão flyweight

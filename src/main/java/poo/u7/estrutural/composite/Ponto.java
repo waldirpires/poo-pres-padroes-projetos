@@ -1,5 +1,6 @@
 package poo.u7.estrutural.composite;
 
+// folha (leaf)
 public class Ponto implements Grafico{
 
 	private int x;

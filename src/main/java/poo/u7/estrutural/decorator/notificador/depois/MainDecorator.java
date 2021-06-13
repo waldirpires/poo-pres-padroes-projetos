@@ -21,5 +21,9 @@ public class MainDecorator {
 		var fumaca = new NotificadorFumaca();
 		var decoradorEmail = new DecoratorEmail(fumaca);
 		decoradorEmail.enviarMensagem("teste 123");
+		
+		// email, sms, slack, facebook
+		var decorator4 = new DecoradorFacebook(decoradorSlack);
+		decorator4.enviarMensagem("Olá de novo . . .");
 	}
 }

@@ -38,8 +38,4 @@ public class Arvore {
 	public static long getQuantidade() {
 		return quantidade;
 	}
-	
-	public static void init() {
-		quantidade = 0;
-	}
 }

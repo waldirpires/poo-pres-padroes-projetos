@@ -34,7 +34,11 @@ public class GraficoComposto implements Grafico{
 
 	@Override
 	public void desenhar() {
-		System.out.println("Desenhando: " + this.toString());		
+		System.out.println("Desenhando: " + this.toString());
+		
+		for (var filho: filhos) {
+			filho.desenhar();
+		}
 	}
 
 }

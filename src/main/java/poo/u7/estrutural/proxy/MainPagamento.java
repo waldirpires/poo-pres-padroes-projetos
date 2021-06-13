@@ -10,5 +10,10 @@ public class MainPagamento {
 		credito.pagar(100.0f);
 		
 		banco.receberPagamento(credito);
+		
+		
+		var pix = new PagamentoViaPix();
+		
+		pix.pagar(200.0f);
 	}
 }

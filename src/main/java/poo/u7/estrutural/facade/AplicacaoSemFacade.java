@@ -2,11 +2,13 @@ package poo.u7.estrutural.facade;
 
 import java.io.File;
 
-public class ConversorDeVideo implements Conversor{
+public class AplicacaoSemFacade {
 
-	// (1) identificar a possibilidade de criação de uma interface simples
-	// (2) criar uma abstração (método simples) para encapsular a complexidade
-	public File converter(String nomeArquivo, String formato) {
+	public static void main(String[] args) {
+		var nomeArquivo = "fonte.mp4";
+		var formato = "ogg";
+		
+		// antes
 		System.out.println("Convertendo o arquivo " + nomeArquivo + " para o formato " + formato + "\n\n");
 		
 		// abrindo arquivo de entrada
@@ -33,6 +35,7 @@ public class ConversorDeVideo implements Conversor{
 		resultado = new MixadorDeAudio().codificarAudio(resultado);
 		
 		// retornando o resultado finalizado
-		return new File(resultado);
+		System.out.println(new File(resultado));		
+		
 	}
 }

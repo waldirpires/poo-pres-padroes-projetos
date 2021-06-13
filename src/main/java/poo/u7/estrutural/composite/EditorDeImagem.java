@@ -22,7 +22,7 @@ public class EditorDeImagem {
 		composite.desenhar();
 		
 		// duas retas com intersessão
-		
+//	https://www.desmos.com/calculator/mhq4hsncnh
 		var p3 = new Ponto(6, 6);
 		
 		var p4 = new Ponto(6, 9);

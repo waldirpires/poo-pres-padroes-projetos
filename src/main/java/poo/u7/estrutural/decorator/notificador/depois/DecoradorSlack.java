@@ -3,7 +3,7 @@ package poo.u7.estrutural.decorator.notificador.depois;
 import poo.u7.estrutural.decorator.notificador.antes.Notificador;
 import poo.u7.estrutural.decorator.notificador.antes.NotificadorSlack;
 
-public class DecoradorSlack extends DecoradorSms {
+public class DecoradorSlack extends DecoradorBase {
 	
 	private Notificador notificadorSlack;
 
