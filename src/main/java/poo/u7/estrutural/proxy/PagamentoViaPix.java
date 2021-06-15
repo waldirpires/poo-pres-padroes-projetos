@@ -2,7 +2,13 @@ package poo.u7.estrutural.proxy;
 
 public class PagamentoViaPix implements Pagamento {
 
+	private String codPix;
+	
 	private PagamentoEmDinheiro pagamentoEmDinheiro;
+	
+	public PagamentoViaPix(String codPix) {
+		this.codPix = codPix;
+	}
 	
 	@Override
 	public void pagar(float valor) {
@@ -13,6 +19,9 @@ public class PagamentoViaPix implements Pagamento {
 			return;
 		}
 
+		// validacao do codigo pix
+		
+		
 		// delegação: o objeto principal é chamado 
 		
 		System.out.println("Pagando " + valor + " via cartão de crédito na data de vencimento\n\n");

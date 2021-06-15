@@ -6,7 +6,7 @@ public class PagamentoEmDinheiro implements Pagamento {
 	
 	@Override
 	public void pagar(float valor) {
-		System.out.println("Pagando em dinheiro");
+		System.out.println("Pagando em dinheiro: " + valor);
 	}
 
 	@Override

@@ -4,8 +4,12 @@ public class TratadorUsuarioValido extends TratadorBase {
 	
 	@Override
 	public void tratar(Requisicao r) {
+		System.out.println("=== Tratador: " + this.getClass().getSimpleName() + "\n");
 		
-		if (!"joao.pereira".equals(r.getUser())) {
+		var user = "joao.pereira";
+		
+		// usuário não existe
+		if (!user.equals(r.getUser())) {
 			System.out.println("ERRO: usuário inválido");
 
 			// sair da cadeia.

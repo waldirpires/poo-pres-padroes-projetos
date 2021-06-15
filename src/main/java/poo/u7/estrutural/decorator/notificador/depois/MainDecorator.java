@@ -9,13 +9,13 @@ public class MainDecorator {
 		// objeto base
 		var notificadorEmail = new NotificadorEmail();
 		// objeto decorado
-		var decoradorEmailSms = new DecoradorSms(notificadorEmail);
+		var decoradorEmailSms = new DecoradorSms(notificadorEmail); // email, sms
 		
 		decoradorEmailSms.enviarMensagem("Olá mundo");			
 		System.out.println("\n=====\n");
 		
 		// decorador slack, sms e email
-		var decoradorSlack = new DecoradorSlack(decoradorEmailSms);
+		var decoradorSlack = new DecoradorSlack(decoradorEmailSms); // email, sms, slack
 		decoradorSlack.enviarMensagem("Casa pegando fogo!");
 		
 		var fumaca = new NotificadorFumaca();
