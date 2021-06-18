@@ -18,6 +18,8 @@ public class ContaBancaria {
 		}
 		// verificar saldo disponivel
 		
+		// verificar o estado da conta bancaria (somente estado disponivel é permitido)
+		
 		
 		// caso de sucesso.
 		this.saldo = this.saldo - valor;

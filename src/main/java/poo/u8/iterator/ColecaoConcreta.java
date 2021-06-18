@@ -1,5 +1,6 @@
 package poo.u8.iterator;
 
+// (2, 4) 
 public class ColecaoConcreta implements IterableCollection<String>{
 
 	private String[] valores;

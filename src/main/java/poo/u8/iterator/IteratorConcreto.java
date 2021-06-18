@@ -1,5 +1,6 @@
 package poo.u8.iterator;
 
+// (3) implementacao do iterador
 public class IteratorConcreto implements Iterator<String>{
 
 	private ColecaoConcreta colecao;
@@ -12,6 +13,7 @@ public class IteratorConcreto implements Iterator<String>{
 	
 	@Override
 	public String getNext() {
+		// se o indice já estiver no final
 		if (index == colecao.getIndex()) {
 			System.out.println("ERROR: não existem mais elementos.\n");
 			

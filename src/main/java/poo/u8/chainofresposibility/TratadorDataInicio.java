@@ -9,7 +9,8 @@ public class TratadorDataInicio extends TratadorBase{
 		System.out.println("=== Tratador: " + this.getClass().getSimpleName() + "\n");
 
 		var agora = LocalDateTime.now();
-		
+
+		// se ele ainda não tiver acesso
 		if (r.getInicioAcesso().isAfter(agora)) {
 			System.out.println("ERRO: inicio acesso não permitido - " + r.getInicioAcesso());
 			

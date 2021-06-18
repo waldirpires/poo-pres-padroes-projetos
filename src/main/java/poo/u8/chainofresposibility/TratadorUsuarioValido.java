@@ -6,6 +6,7 @@ public class TratadorUsuarioValido extends TratadorBase {
 	public void tratar(Requisicao r) {
 		System.out.println("=== Tratador: " + this.getClass().getSimpleName() + "\n");
 		
+		// usuário carregado do banco de dados
 		var user = "joao.pereira";
 		
 		// usuário não existe

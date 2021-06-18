@@ -9,8 +9,25 @@ public class TratadorMain {
 		var tratador = FabricaTratadores.getCadeiaTratadores();
 		
 		// objeto de requisição
-		var requisicao = new RequisicaoUsuario("joao.borges", "123456", "analista", LocalDateTime.of(2022, 10, 2, 8, 0), LocalDateTime.of(2020, 11, 3, 12, 0));
+		var user = "joao.pereira";
+		var pw = "654321";
+		var perfil = "presidente";
+		var requisicao = new RequisicaoUsuario(
+				user, 
+				pw, 
+				perfil, 
+				LocalDateTime.of(2020, 10, 2, 8, 0), 
+				LocalDateTime.of(2022, 11, 3, 12, 0)
+				);
 		
+		// Problema:
+		// - usuário é valido ou nao
+		// - senha (autenticação)
+		// - perfil (autorização)
+		// - acesso em relação a data inicio
+		// - acesso em relação a data fim
+		
+		// execucao da cadeia de acesso
 		tratador.tratar(requisicao);
 	}
 }
