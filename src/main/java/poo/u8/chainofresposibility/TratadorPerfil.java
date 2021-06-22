@@ -11,6 +11,7 @@ public class TratadorPerfil extends TratadorBase {
 	public void tratar(Requisicao r) {
 		System.out.println("=== Tratador: " + this.getClass().getSimpleName() + "\n");
 		
+		// perfil do usuário não suportado
 		if (!perfisValidos.contains(r.getRole())) {
 			System.out.println("ERRO: perfil inválido - " + r.getRole());
 			

@@ -1,5 +1,6 @@
 package poo.u8.observer;
 
+// obvinte/listener/observer para email
 public class EmailAlertListener implements EventListener{
 
 	private String email;

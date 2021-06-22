@@ -11,12 +11,12 @@ public class TratadorMain {
 		// objeto de requisição
 		var user = "joao.pereira";
 		var pw = "654321";
-		var perfil = "presidente";
+		var perfil = "diretor";
 		var requisicao = new RequisicaoUsuario(
 				user, 
 				pw, 
 				perfil, 
-				LocalDateTime.of(2020, 10, 2, 8, 0), 
+				LocalDateTime.of(2021, 6, 20, 8, 0), 
 				LocalDateTime.of(2022, 11, 3, 12, 0)
 				);
 		

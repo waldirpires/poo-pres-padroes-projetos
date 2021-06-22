@@ -1,5 +1,7 @@
 package poo.u8.chainofresposibility;
 
+import java.util.Arrays;
+
 public class TratadorUsuarioValido extends TratadorBase {
 	
 	@Override
@@ -7,10 +9,10 @@ public class TratadorUsuarioValido extends TratadorBase {
 		System.out.println("=== Tratador: " + this.getClass().getSimpleName() + "\n");
 		
 		// usuário carregado do banco de dados
-		var user = "joao.pereira";
+		var users = Arrays.asList("joao.pereira", "Maria Silva", "Cristiano Ronaldo");
 		
 		// usuário não existe
-		if (!user.equals(r.getUser())) {
+		if (!users.contains(r.getUser())) {
 			System.out.println("ERRO: usuário inválido");
 
 			// sair da cadeia.

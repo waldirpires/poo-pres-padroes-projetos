@@ -39,7 +39,7 @@ public class Aplicacao {
 		comando.desfazer(); // undo - desfazer
 	}
 	
-	public void executarComando(ComandoImpl c) {
+	public void executarComando(Comando c) {
 		// execucao do comando pelo receptor (app)
 		if (c.executar()) {
 			historico.empilhar(c);

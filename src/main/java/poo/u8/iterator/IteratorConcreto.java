@@ -3,11 +3,11 @@ package poo.u8.iterator;
 // (3) implementacao do iterador
 public class IteratorConcreto implements Iterator<String>{
 
-	private ColecaoConcreta colecao;
+	private ColecaoVetorConcreta colecao;
 	
 	private int index = 0;
 	
-	public IteratorConcreto(ColecaoConcreta colecao) {
+	public IteratorConcreto(ColecaoVetorConcreta colecao) {
 		this.colecao = colecao;
 	}
 	

@@ -4,13 +4,16 @@ import java.util.Stack;
 
 public class HistoricoDeComandos {
 
-	private Stack<ComandoImpl> historico = new Stack<ComandoImpl>();
+	// pilha de comandos executados
+	private Stack<Comando> historico = new Stack<Comando>();
 
-	public void empilhar(ComandoImpl c) {
+	// executo um comando
+	public void empilhar(Comando c) {
 		historico.push(c);
 	}
 
-	public ComandoImpl desempilhar() {
+	// desfazer um comando
+	public Comando desempilhar() {
 		return historico.pop();
 	}
 

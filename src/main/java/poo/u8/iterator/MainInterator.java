@@ -1,10 +1,13 @@
 package poo.u8.iterator;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainInterator {
 
 	public static void main(String[] args) {
 		// colecao iterável
-		var colecao = new ColecaoConcreta(10);
+		var colecao = new ColecaoVetorConcreta(10);
 		colecao.adicionar("the");
 		colecao.adicionar("book");
 		colecao.adicionar("is");
@@ -22,5 +25,18 @@ public class MainInterator {
 			
 			System.out.println(item);
 		}
+		
+//		var test = "the book is on the table";
+//		var list = new ArrayList<CharSequence>();
+//		for (int i = 0; i < test.length(); i++) {
+//			list.add(test.charAt(i));
+//		}
+//		var iterator = Arrays.asList(test.toCharArray()).iterator();
+//		
+//		while (iterator.hasNext()) {
+//			var item = iterator.next();
+//			
+//			System.out.println(item);
+//		}
 	}
 }

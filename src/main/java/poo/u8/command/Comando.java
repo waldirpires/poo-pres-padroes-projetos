@@ -4,4 +4,6 @@ package poo.u8.command;
 public interface Comando {
 
 	boolean executar();	
+	
+	void desfazer();
 }

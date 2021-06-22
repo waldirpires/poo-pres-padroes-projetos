@@ -1,5 +1,6 @@
 package poo.u8.observer;
 
+// observador, consumidor do evento
 public class LoggingListener implements EventListener{
 	private Arquivo log;
 	private String mensagem;

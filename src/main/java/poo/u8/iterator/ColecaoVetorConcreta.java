@@ -1,13 +1,13 @@
 package poo.u8.iterator;
 
 // (2, 4) 
-public class ColecaoConcreta implements IterableCollection<String>{
+public class ColecaoVetorConcreta implements IterableCollection<String>{
 
 	private String[] valores;
 	
 	private int index;
 	
-	public ColecaoConcreta(int tamanho) {
+	public ColecaoVetorConcreta(int tamanho) {
 		this.valores = new String[tamanho];
 	}
 	

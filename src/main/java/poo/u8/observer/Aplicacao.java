@@ -9,8 +9,11 @@ public class Aplicacao {
 	private EventListener emailAlert;
 	
 	public void config() {
+		// quem publica
 		editor = new Editor();
 		
+		
+		// quem consome
 		logger = new LoggingListener("log.txt", "Arquivo foi aberto");
 		editor.getEventos().subscribe("open", logger);
 		
