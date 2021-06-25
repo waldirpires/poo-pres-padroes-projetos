@@ -2,6 +2,7 @@ package poo.u8.mediador;
 
 public class Componente {
 
+	// mediador de todos os componentes
 	protected Mediador dialogo;
 
 	public Componente(Mediador dialogo) {

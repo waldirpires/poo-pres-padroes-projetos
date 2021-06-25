@@ -15,13 +15,12 @@ public class Publicado implements Estado {
 
 	@Override
 	public void renderizar() {
-		// TODO Auto-generated method stub
+		System.out.println("Renderizar o documento publicado");
 		
 	}
 
 	@Override
 	public void publicar() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Realizar a publicação do documento");		
 	}
 }

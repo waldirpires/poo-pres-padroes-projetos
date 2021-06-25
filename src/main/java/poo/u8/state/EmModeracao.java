@@ -15,13 +15,12 @@ public class EmModeracao implements Estado {
 
 	@Override
 	public void renderizar() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Renderizando documento em moderação");		
 	}
 
 	@Override
 	public void publicar() {
-		// TODO Auto-generated method stub
+		System.out.println("ALERTA: documento ainda não está publicado.");
 		
 	}
 }

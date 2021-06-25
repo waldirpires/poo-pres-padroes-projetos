@@ -1,5 +1,6 @@
 package poo.u8.mediador;
 
+// 3 mediador do sistema
 public class DialogoDeAutenticacao implements Mediador{
 
 	private String titulo;
@@ -15,6 +16,8 @@ public class DialogoDeAutenticacao implements Mediador{
 	
 	public DialogoDeAutenticacao(String titulo) {
 		this.titulo = titulo;
+		
+		// fábrica, construção de objetos
 		loginOuRegistrar = new Checkbox(this);
 		usuario = new CaixaDeTexto(this);
 		senha =  new CaixaDeTexto(this);
@@ -23,6 +26,14 @@ public class DialogoDeAutenticacao implements Mediador{
 		regEmail =  new CaixaDeTexto(this);
 		ok = new Botao(this);
 		cancelar = new Botao(this);
+	}
+	
+	public Checkbox getLoginOuRegistrar() {
+		return loginOuRegistrar;
+	}
+	
+	public Botao getOk() {
+		return ok;
 	}
 	
 	@Override
@@ -38,12 +49,41 @@ public class DialogoDeAutenticacao implements Mediador{
 		
 		if (enviador.equals(ok) && evento.equals("click")) {
 			if (loginOuRegistrar.isCheck()) {
-				System.out.println("Registrar usuario");
+				System.out.println("Realizar login do usuario");
 			} else {
 				System.out.println("Criando uma nova conta com os dados");
 			}
-		}
-		
+		}		
 	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public CaixaDeTexto getUsuario() {
+		return usuario;
+	}
+
+	public CaixaDeTexto getSenha() {
+		return senha;
+	}
+
+	public CaixaDeTexto getRegUsuario() {
+		return regUsuario;
+	}
+
+	public CaixaDeTexto getRegSenha() {
+		return regSenha;
+	}
+
+	public CaixaDeTexto getRegEmail() {
+		return regEmail;
+	}
+
+	public Botao getCancelar() {
+		return cancelar;
+	}
+	
+	
 
 }

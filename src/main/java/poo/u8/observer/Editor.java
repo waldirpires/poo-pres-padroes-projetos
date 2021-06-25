@@ -1,6 +1,6 @@
 package poo.u8.observer;
 
-// quem publica
+// quem publica, sujeito
 public class Editor {
 	
 	// gerencia publicação e subscrita de eventos

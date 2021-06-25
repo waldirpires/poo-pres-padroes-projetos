@@ -9,6 +9,7 @@ public class Checkbox extends Componente{
 		// TODO Auto-generated constructor stub
 	}
 
+	// 6 componentes referenciando o mediador
 	public void checar() {
 		this.check = !check;
 		dialogo.notificar(this, "check");

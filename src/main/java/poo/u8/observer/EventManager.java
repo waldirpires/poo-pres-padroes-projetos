@@ -6,6 +6,7 @@ import java.util.Map;
 // associar eventos a ouvintes/listeners
 public class EventManager implements Publicador{
 
+	// lista dos consumidores
 	private Map<String, EventListener> listeners;
 	
 	public EventManager() {
