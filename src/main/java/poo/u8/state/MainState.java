@@ -18,6 +18,8 @@ public class MainState {
 		
 		documento.renderizar();
 		documento.publicar();
+		
+		documento.renderizar();
 	}
 
 }

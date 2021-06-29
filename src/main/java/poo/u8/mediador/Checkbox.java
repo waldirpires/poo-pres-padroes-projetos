@@ -11,7 +11,9 @@ public class Checkbox extends Componente{
 
 	// 6 componentes referenciando o mediador
 	public void checar() {
-		this.check = !check;
+		this.check = !check; // mudança de estado (true/false)
+		
+		// mediador entra em ação para notificar todos os componentes
 		dialogo.notificar(this, "check");
 	}
 	

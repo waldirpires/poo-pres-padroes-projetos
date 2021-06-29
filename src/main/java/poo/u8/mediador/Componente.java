@@ -1,6 +1,6 @@
 package poo.u8.mediador;
 
-public class Componente {
+public class Componente { // colleague, participante
 
 	// mediador de todos os componentes
 	protected Mediador dialogo;

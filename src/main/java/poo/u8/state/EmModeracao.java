@@ -15,7 +15,7 @@ public class EmModeracao implements Estado {
 
 	@Override
 	public void renderizar() {
-		System.out.println("Renderizando documento em moderação");		
+		System.out.println("Executar a lógica do documento moderado");
 	}
 
 	@Override

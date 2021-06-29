@@ -33,6 +33,8 @@ public class EditorDeTexto {
 	
 	// (5) criacao de uam cópia do objeto de origem
 	public Snapshot criarSnapShot() {
+		
+		// (5) cria uma foto do editor de texto
 		return new Snapshot(this, texto, posicaoCursor, selecao);
 	}
 

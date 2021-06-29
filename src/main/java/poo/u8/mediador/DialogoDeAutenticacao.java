@@ -1,5 +1,27 @@
 package poo.u8.mediador;
 
+
+/**
+ * 
+Titulo
+
+Usuário: [         ]
+Senha:   [         ]
+
+
+Registro Usuário: [         ]
+Registro Senha:   [         ]
+Registro Email:   [         ]
+
+[X] loginOuRegistrar
+
+<ok>    <cancelar>
+
+
+ * @author wrpires
+ *
+ */
+
 // 3 mediador do sistema
 public class DialogoDeAutenticacao implements Mediador{
 
@@ -38,6 +60,7 @@ public class DialogoDeAutenticacao implements Mediador{
 	
 	@Override
 	public void notificar(Componente enviador, String evento) {
+		// checkbox de login ou registrar
 		if (enviador.equals(loginOuRegistrar) && evento.equals("check")) {
 			if (loginOuRegistrar.isCheck()) {
 				titulo = "login";
@@ -47,10 +70,14 @@ public class DialogoDeAutenticacao implements Mediador{
 			}
 		}
 		
+		// execução do diálogo
 		if (enviador.equals(ok) && evento.equals("click")) {
+			// se o checkbox está habilitado
 			if (loginOuRegistrar.isCheck()) {
+				// fazer login
 				System.out.println("Realizar login do usuario");
 			} else {
+				// fazer cadastro
 				System.out.println("Criando uma nova conta com os dados");
 			}
 		}		

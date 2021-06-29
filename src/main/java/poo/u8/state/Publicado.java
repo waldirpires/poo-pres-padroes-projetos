@@ -15,8 +15,7 @@ public class Publicado implements Estado {
 
 	@Override
 	public void renderizar() {
-		System.out.println("Renderizar o documento publicado");
-		
+		System.out.println("Executar a lógica do documento publicado");		
 	}
 
 	@Override
